@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Vero Signare WebPKI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #222;
+      background: #f5f7fa;
+    }
+    header {
+      background: #0066cc;
+      color: #fff;
+      padding: 28px 24px;
+    }
+    header h1 { font-size: 22px; font-weight: 700; }
+    header p  { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 40px 48px;
+      box-shadow: 0 1px 6px rgba(0,0,0,.08);
+    }
+    h2 {
+      font-size: 16px;
+      color: #0066cc;
+      margin: 28px 0 8px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #e8edf3;
+    }
+    h2:first-child { margin-top: 0; }
+    p  { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #e8f3e8;
+      color: #2a7a2a;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vero Signare — WebPKI</h1>
+  <p>Extensão de Assinatura Digital A3 ICP-Brasil</p>
+</header>
+
+<main>
+  <h2>Política de Privacidade</h2>
+  <span class="badge">Sem coleta de dados</span>
+
+  <p>
+    Esta Política de Privacidade descreve como a extensão <strong>Vero Signare — WebPKI</strong>
+    trata (ou melhor: não trata) dados dos seus usuários.
+  </p>
+
+  <h2>Dados coletados</h2>
+  <p>
+    A extensão <strong>não coleta, não armazena e não transmite nenhum dado pessoal</strong>
+    ou informação de uso. Não há telemetria, analytics, cookies ou qualquer forma de
+    rastreamento implementada.
+  </p>
+
+  <h2>Como a extensão funciona</h2>
+  <p>
+    O único propósito da extensão é servir como ponte segura entre uma página web e o
+    host nativo instalado no computador do usuário. O fluxo completo ocorre localmente:
+  </p>
+  <ul>
+    <li>A página web envia o <strong>hash</strong> do documento a ser assinado;</li>
+    <li>A extensão repassa esse hash ao host nativo via Native Messaging;</li>
+    <li>O host nativo solicita o PIN ao usuário e acessa o token A3 via PKCS#11;</li>
+    <li>Apenas a <strong>assinatura digital</strong> gerada é retornada à página web.</li>
+  </ul>
+  <p>
+    A chave privada do certificado <strong>jamais sai do dispositivo físico</strong>
+    (token USB ou smartcard) e nenhuma informação é enviada a servidores externos.
+  </p>
+
+  <h2>Permissões utilizadas</h2>
+  <ul>
+    <li>
+      <strong>nativeMessaging</strong> — exclusivamente para comunicação com o host nativo
+      local. Não é usada para acessar dados do navegador, histórico ou qualquer outra
+      informação do usuário.
+    </li>
+  </ul>
+
+  <h2>Compartilhamento de dados</h2>
+  <p>
+    Nenhum dado é compartilhado com terceiros, pois nenhum dado é coletado.
+  </p>
+
+  <h2>Contato</h2>
+  <p>
+    Dúvidas sobre esta política podem ser enviadas para:
+    <strong>suporte@verosignare.com.br</strong>
+  </p>
+
+  <h2>Atualizações</h2>
+  <p>
+    Esta política pode ser atualizada para refletir mudanças na extensão. A data da
+    última revisão é indicada abaixo.
+  </p>
+  <p style="font-size:13px; color:#888;">Última atualização: abril de 2026</p>
+</main>
+
+<footer>
+  &copy; 2026 Vero Signare. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>

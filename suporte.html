@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suporte — Vero Signare WebPKI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #222;
+      background: #f5f7fa;
+    }
+    header {
+      background: #0066cc;
+      color: #fff;
+      padding: 28px 24px;
+    }
+    header h1 { font-size: 22px; font-weight: 700; }
+    header p  { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 40px 48px;
+      box-shadow: 0 1px 6px rgba(0,0,0,.08);
+    }
+    h2 {
+      font-size: 16px;
+      color: #0066cc;
+      margin: 28px 0 8px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #e8edf3;
+    }
+    h2:first-child { margin-top: 0; }
+    p  { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; }
+    .card {
+      background: #f0f6ff;
+      border-left: 4px solid #0066cc;
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .card strong { display: block; margin-bottom: 4px; }
+    .step {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: #0066cc;
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vero Signare — WebPKI</h1>
+  <p>Central de Suporte · Assinatura Digital A3 ICP-Brasil</p>
+</header>
+
+<main>
+
+  <h2>Contato</h2>
+  <div class="card">
+    <strong>E-mail de suporte</strong>
+    suporte@verosignare.com.br
+  </div>
+
+  <h2>Pré-requisitos</h2>
+  <ul>
+    <li>Windows 10 64-bit ou superior</li>
+    <li>Token A3 ICP-Brasil (USB ou smartcard) com driver instalado</li>
+    <li>Host nativo <strong>Vero Signare — WebPKI</strong> instalado
+        (<code>VeroSignare-WebPKI.msi</code>)</li>
+    <li>Google Chrome ou Microsoft Edge atualizado</li>
+  </ul>
+
+  <h2>Instalação</h2>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>Baixe e execute o instalador <strong>VeroSignare-WebPKI.msi</strong>
+         (requer permissão de administrador).</div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>Reinicie o Chrome ou Edge após a instalação.</div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>A extensão será instalada automaticamente pelo instalador.
+         Verifique em <code>chrome://extensions</code> ou <code>edge://extensions</code>.</div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <div>Conecte o token A3 e acesse a aplicação web para iniciar uma assinatura.</div>
+  </div>
+
+  <h2>Problemas comuns</h2>
+
+  <p><strong>Extensão mostra "Host desconectado"</strong><br>
+  O host nativo não está instalado ou não foi encontrado. Reinstale o
+  <code>VeroSignare-WebPKI.msi</code> como administrador e reinicie o navegador.</p>
+
+  <p><strong>Token não detectado</strong><br>
+  Verifique se o driver do token está instalado corretamente e se o dispositivo
+  aparece no Gerenciador de Dispositivos do Windows. Tente desconectar e reconectar o token.</p>
+
+  <p><strong>PIN incorreto / token bloqueado</strong><br>
+  Consulte o fabricante do seu token A3 para procedimento de desbloqueio. O número
+  de tentativas erradas permitidas varia por fabricante.</p>
+
+  <p><strong>Extensão removida após atualização do navegador</strong><br>
+  Reinstale o <code>VeroSignare-WebPKI.msi</code>. O instalador reconfigura
+  automaticamente a força de instalação da extensão via política do navegador.</p>
+
+  <h2>Desinstalação</h2>
+  <p>
+    Acesse <strong>Configurações → Aplicativos → Aplicativos instalados</strong>,
+    localize <em>Vero Signare — WebPKI</em> e clique em Desinstalar.
+    A extensão e todas as configurações de registro serão removidas automaticamente.
+  </p>
+
+</main>
+
+<footer>
+  &copy; 2026 Vero Signare. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
